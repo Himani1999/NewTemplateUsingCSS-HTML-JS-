@@ -389,7 +389,7 @@ body{
     padding-top: 50px;
    /* border: none; */
     border-radius: 10px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 .grid8{
     display: grid;
@@ -397,6 +397,155 @@ body{
     padding-top: 0px;
     grid-gap: 30px;
     width: 100%;
+    border: none;
    /* height: 150px; */
     /* height: 30px; */
+}
+.selling{
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+.mark{
+    color: rgb(175, 174, 174);
+    font-size: 16px;
+    float: left;
+}
+.card3{
+    border: none;
+    border-radius: 5px;
+    /* box-shadow:  none|h-offset v-offset blur spread color |inset|initial|inherit; */
+}
+.card3:hover{
+    background-color: rgb(218, 216, 216);
+    transform: scale(1.1);   
+}
+.view{
+    background-color: skyblue;
+    color: rgb(210, 232, 241);
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+}
+
+.transparent9{
+    margin-top: 10px;
+    padding-top: 30px;
+   /* border: none; */
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.grid9{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 0px;
+    grid-gap: 30px;
+    width: 100%;
+    border: none;
+   /* height: 150px; */
+    /* height: 30px; */
+}
+
+.transparent10{
+    margin-top: 0px;
+    padding-top: 30px;
+   /* border: none; */
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.grid10{
+    display: grid;
+    grid-template-columns: 35% 20% 20% 25%; 
+    padding-top: 50px;
+    grid-gap: 0px;
+    width: 100%;
+    border: none;
+   /* height: 150px; */
+    /* height: 30px; */
+}
+.about{
+    /* border: 1px solid black; */
+    padding-right: 20px;
+}
+.navigations{
+    color: white;
+  /*  border: 1px solid red; */
+}
+.follow{
+   /* border: 1px solid green; */
+    color: white;
+}
+.partition{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20px;
+}/*
+.search{
+    border: 1px solid pink;
+}*/
+#search{
+    height: 40px;
+    border: 1px solid rgb(160, 156, 156);
+    background-color:  rgb(56, 56, 56);
+    width: 69.2%;
+    float: left;
+}
+.search1{
+    float: right;
+    width: 28.5%;
+    height: 44px;
+    border: none;
+    font-size: 20px;
+    background-color: skyblue;
+    color: rgb(245, 239, 239);
+}
+.about1{
+    color: white;
+}
+#lorem{
+    margin-top: 20px;
+    color: rgb(160, 156, 156);
+}
+
+.facebook {
+    color: rgb(160, 156, 156);
+  }
+  
+  .twitter {
+    color: rgb(160, 156, 156);
+  }
+  
+  .instagram {
+    color: rgb(160, 156, 156);
+  }
+  
+  .linkedin {
+    color: rgb(160, 156, 156);
+  }  
+
+
+.navigations ul li{
+    color: rgb(160, 156, 156);
+    list-style-type: none;
+    padding: 8px 0px;
+    margin-left: -40px;
+}
+
+.follow ul li{
+    margin-left: -40px;
+    padding: 8px 0px;
+    color: rgb(160, 156, 156);
+}
+#hr{
+    margin-top: 70px;
+    color:  rgb(160, 156, 156);;
+}
+.copyright{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+    color:  rgb(160, 156, 156);
 }
