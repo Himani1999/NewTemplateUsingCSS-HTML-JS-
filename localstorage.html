@@ -6,7 +6,39 @@
     <title>Document-localStorage</title>
 </head>
 <body>
-    <script>
+    <p id="name"></p>
+<!--
+        <script>
+        if(window.localStorage)
+{
+    alert("Local storage is supported")
+}
+else
+{
+    alert("Local storage is not supported")
+}
+
+if(window.localStorage){
+    localStorage.setItem("username","Himani Sharma");
+    var username = localStorage.getItem("username");
+    document.getElementById('name').innerHTML = "My Name is " + username;
+}
+else{
+    alert("nothing");
+}
+
+
+if(window.sessionStorage){ 
+        sessionStorage.setItem("user","Tech Altum");
+        var name=sessionStorage.getItem("user");
+        alert("Your name is " + name)
+    }
+    else{
+        alert("session storage not supported")
+    }	
+
+
+    /* console */
         localStorage.setItem("name","Himani");
         localStorage.setItem("newdata","Upload");
         localStorage.setItem("newdata","name")
@@ -18,5 +50,39 @@
 
 
     </script>
+-->
+<style>
+    .Formpage{
+
+    }
+</style>
+
+<script>
+    function form(){
+        var name = document.getElementById('name');
+        var pw = document.getElementById('pw');
+
+        if(name.value.length == 0){
+    alert('Please fill in email');
+
+}else{
+    localStorage.setItem('name', name.value);
+    localStorage.setItem('pw', pw.value);
+    alert('Your account has been created');
+}
+    }
+</script>
+
+<form action="" class="Formpage">
+<label for="name">UserId</label>
+<input type="text" placeholder="Enter Email Id" id="name">
+<label for="pw">Password</label>
+<input type="password" placeholder="Enter Password" id="pw">
+<input id="rgstr_btn" type="submit" value="Register" onclick="store()">
+
+<button id="submit" type="submit" onclick="form()">Submit</button>
+<input id="rgstr_btn" type="submit" value="Register" onclick="form()">
+
+</form>
 </body>
 </html>
