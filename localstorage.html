@@ -51,6 +51,7 @@ if(window.sessionStorage){
 
     </script>
 -->
+<!--
 <style>
     .Formpage{
 
@@ -84,5 +85,57 @@ if(window.sessionStorage){
 <input id="rgstr_btn" type="submit" value="Register" onclick="form()">
 
 </form>
+-->
+<style>
+    .main{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .register{
+        border: 1px solid black;
+        margin: auto;
+        width: 40%;
+        padding: 20px;
+    }
+    .login{
+        border: 1px solid black;
+        margin: auto;
+        width: 40%;
+        padding: 20px;
+    }
+</style>
+<p id="welcome"></p>
+<div class="main">
+<div class="register">
+<label for="User">Username</label>
+<input type="text" id="ui" placeholder="enter username"><br><br>
+<label for="Pass">Password</label>
+<input type="text" id="pw" placeholder="enter password"><br>
+<button id="button1" onclick="reg()">Login</button>
+<!-- </div>
+<div class="login">
+    <label for="User">Username</label>
+<input type="text" id="ui" placeholder="enter username">
+<label for="Pass">Password</label>
+<input type="text" id="pw" placeholder="enter password">
+<button id="button2" id="log">Login</button>
+</div> -->
+</div>
+
+<script>
+    // window.addEventListener
+    // document.addEventListener
+    function reg(){
+        var username = document.getElementById('ui').value;
+        var password = document.getElementById('pw').value;
+       if((username == "") || (password == "")){
+       }else{
+        localStorage.setItem("username",username);
+        localStorage.setItem("password",password);
+        window.location.href ="home.html";
+       }
+       
+    }
+</script>
 </body>
 </html>
