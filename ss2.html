@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+   
+</head>
+<body>
+
+    <h1>Hello, <span id="currentUser" style="color:red;"></span> Welcome to Home Page.</h1>
+
+    <button id="btnLogout" onclick="logOut()">Logout</button>
+<!--    <button id="button2" onclick="re()">remove</button> -->
+
+    
+    <script>
+
+        window.addEventListener('storage',function(){
+            window.location.href = "sessionstorage.html";
+        })
+        
+        // if(window.sessionStorage == null){
+        //     window.location.href = "sessionstorage.html"
+        // }else{
+        //     window.location.href = "ss2.html";
+        // }
+
+
+
+        if((sessionStorage.getItem("username") == null) && (sessionStorage.getItem("password") == null)){
+                window.location.href = "sessionstorage.html";
+        }
+
+        
+        const user = sessionStorage.getItem("username");
+        const pass = sessionStorage.getItem("password");//password is the key which have our password value
+        document.getElementById("currentUser").innerHTML = user;
+
+        function logOut(){
+            sessionStorage.removeItem("username");
+            sessionStorage.removeItem("password");
+
+            if((sessionStorage.getItem("username") == null) && (sessionStorage.getItem("password") == null)){
+                window.location.href = "sessionstorage.html";
+            }
+        }
+        //document.getElementById("btnLogout").addEventListener('click',logOut());
+
+
+</script>
+</body>
+</html>

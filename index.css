@@ -215,8 +215,7 @@ body{
     padding: 10px 10px;
     /* background-color: skyblue; */
 }
-#real3:hover{
-}
+
 #real4{
     position: absolute;
     bottom: 0px;
@@ -230,8 +229,7 @@ body{
     padding: 10px 10px;
     /* background-color: skyblue; */
 }
-#real4:hover{
-}
+
 .card2{
     position: relative;
     border: none;
@@ -443,17 +441,38 @@ body{
     grid-template-columns: auto auto;
     padding-top: 0px;
     grid-gap: 30px;
-    width: 100%;
+    width: 100%; 
     border: none;
    /* height: 150px; */
     /* height: 30px; */
 }
+
+
+.transparent13{
+    margin-top: 10px;
+    padding-top: 30px;
+   /* border: none; */
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.grid13{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 0px;
+    grid-gap: 30px;
+    width: 100%; 
+    border: none;
+   /* height: 150px; */
+    /* height: 30px; */
+}
+
+
 .grid9-1{
     float: left;
-    width: 50%;
+    width: 100%;
 }
 .grid9-2{
-    width: 50%;
+    width: 100%;
     float: right;
 }
 .transparent10{

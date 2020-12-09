@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+   
 </head>
 <body>
 
     <h1>Hello, <span id="currentUser" style="color:red;"></span> Welcome to Home Page.</h1>
 
     <button id="btnLogout" onclick="logOut()">Logout</button>
+<!--    <button id="button2" onclick="re()">remove</button> -->
 
     
     <script>
+
+        // if(window.localStorage == null){
+        //     window.location.href = "localstorage.html"
+        // }else{
+        //     window.location.href = "home.html";
+        // }
+
+        window.addEventListener('storage',function(){
+            window.location.href = "localstorage.html";
+
+        })
+
+
+
+        if((localStorage.getItem("username") == null) && (localStorage.getItem("password") == null)){
+                window.location.href = "localstorage.html";
+        }
+
+
         const user = localStorage.getItem("username");
         const pass = localStorage.getItem("password");//password is the key which have our password value
         document.getElementById("currentUser").innerHTML = user;
@@ -21,13 +42,28 @@
             localStorage.removeItem("username");
             localStorage.removeItem("password");
 
-            if((localStorage.getItem("username") == null) && (console.log(localStorage) == null)){
-                window.location.href = "localstorage.html   ";
+            if((localStorage.getItem("username") == null) && (localStorage.getItem("password") == null)){
+                window.location.href = "localstorage.html";
             }
         }
         //document.getElementById("btnLogout").addEventListener('click',logOut());
 
 
-    </script>
+</script>
+<!-- <script>
+
+function re(){
+
+
+localStorage.clear("username");
+    localStorage.clear("password");
+
+if(window.localStorage == null){
+window.location.href ="html.html";
+}else{
+window.location.href = "localstorage.html";
+}
+}
+</script> -->
 </body>
 </html>
