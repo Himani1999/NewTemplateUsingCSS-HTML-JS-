@@ -24,7 +24,10 @@ body{
 .topnav {
     overflow: hidden;
     background-color: white;
-    
+    border: 1px solid black;
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
   }
   
   .topnav a {
@@ -239,8 +242,7 @@ body{
     padding: 10px 10px;
     /* background-color: skyblue; */
 }
-#real3:hover{
-}
+
 #real4{
     position: absolute;
     bottom: 0px;
@@ -254,8 +256,7 @@ body{
     padding: 10px 10px;
     /* background-color: skyblue; */
 }
-#real4:hover{
-}
+
 .card2{
     position: relative;
     border: none;
@@ -580,7 +581,7 @@ ul li{
 }
 #hr{
     margin-top: 70px;
-    color:  rgb(160, 156, 156);;
+    color:  rgb(160, 156, 156);
 }
 .copyright{
     padding-top: 50px;
