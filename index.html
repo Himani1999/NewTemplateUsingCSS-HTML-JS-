@@ -18,6 +18,9 @@
             <div class="nav" id="nav">
                 <div style="float: left; font-size:25px; font-weight: bold; margin-top: 22px; margin-left: 20px;">
                     CLASSY<span style="color:red">ADS</span></div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 <button id="button">+ Post an Ad</button>
                 <a href="">Register</a>
                 <a href="">Login</a>
@@ -152,14 +155,14 @@
                 <div class="grid5">
                     <div class="horizontalcard"><img src="house.jpg" alt=""
                         style="width:50%; height: 200px; float: left;">
-                    <p class="secondicon">Furniture</p>
+                    <p class="secondicon1">Real Estate</p>
                     <p style="color: skyblue; font-size: 17px; text-align: center; padding-top: 20px;">Wooden Chair
                         & Table</p>
                     <p style="font-size: 15px; text-align: center;">Don St, Brooklyn, New York</p>
                 </div>
                 <div class="horizontalcard"><img src="cars.png" alt=""
                         style="width:50%; height: 200px; float: left;">
-                    <p class="secondicon">Real Estate</p>
+                    <p class="secondicon1">Cars & Vehicles</p>
                     <p style="color: skyblue; font-size: 17px; text-align: center; padding-top: 20px;">House With
                         Swimming Pool</p>
                     <p style="font-size: 15px; text-align: center;">Don St, Brooklyn, New York</p>
@@ -170,14 +173,14 @@
                 <div class="grid6">
                     <div class="horizontalcard"><img src="furniture.jpg" alt=""
                             style="width:50%; height: 200px; float: left;">
-                        <p class="secondicon">Furniture</p>
+                        <p class="secondicon1">Furniture</p>
                         <p style="color: skyblue; font-size: 17px; text-align: center; padding-top: 20px;">Wooden Chair
                             & Table</p>
                         <p style="font-size: 15px; text-align: center;">Don St, Brooklyn, New York</p>
                     </div>
                     <div class="horizontalcard"><img src="house2.jpg" alt=""
                             style="width:50%; height: 200px; float: left;">
-                        <p class="secondicon">Real Estate</p>
+                        <p class="secondicon1">Real Estate</p>
                         <p style="color: skyblue; font-size: 17px; text-align: center; padding-top: 20px;">House With
                             Swimming Pool</p>
                         <p style="font-size: 15px; text-align: center;">Don St, Brooklyn, New York</p>
@@ -188,14 +191,14 @@
                 <div class="grid7">
                     <div class="horizontalcard"><img src="iphonex.jpg" alt=""
                             style="width:50%; height: 200px; float: left;">
-                        <p class="secondicon">Electronics</p>
+                        <p class="secondicon1">Electronics</p>
                         <p style="color: skyblue; font-size: 17px; text-align: center; padding-top: 20px;">iPhone X gray
                         </p>
                         <p style="font-size: 15px; text-align: center;">Don St, Brooklyn, New York</p>
                     </div>
                     <div class="horizontalcard"><img src="furniture.jpg" alt=""
                             style="width:50%; height: 200px; float: left;">
-                        <p class="secondicon">Furniture</p>
+                        <p class="secondicon1">Furniture</p>
                         <p style="color: skyblue; font-size: 17px; text-align: center; padding-top: 20px;">Wooden Chair
                             & Table</p>
                         <p style="font-size: 15px; text-align: center;">Don St, Brooklyn, New York</p>
@@ -297,6 +300,17 @@
             <hr size="1" id="hr">
             <div class="copyright">Copyright ©2020 All rights reserved | This template is made with by <span style="color: rgb(196, 190, 190); font-size: 20px;">Colorlib</span></div>
         </div>
+        
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     </div>
 
     

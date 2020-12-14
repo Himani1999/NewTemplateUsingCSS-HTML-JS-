@@ -14,7 +14,7 @@ body{
     width: 100%;
     background-image: url("1.jpg");
     opacity: 0.8;
-    height: 800px;
+    height: 670px;
     background-size: cover;
     margin: 0;
    /* background-attachment: fixed;*/
@@ -27,7 +27,7 @@ body{
     border: 1px solid black;
     margin: auto;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   
   .topnav a {
@@ -57,7 +57,7 @@ body{
     font-size:25px; 
     font-weight: bold; 
     margin-top: 20px; 
-    margin-left: 120px; 
+    margin-left: 50px; 
     color: black; 
     padding-right: 150px;
   }
@@ -87,11 +87,29 @@ body{
     margin-left: 200px;
     color: black;
     font-size: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
+@keyframes bounce {
+    0% {
+      transform: translateY(0px);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    80%,
+    100% {
+      transform: translateY(0px);
+    }
+  }
 .text2{
     color: black;
     font-size: 20px;
     margin-left: 400px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 .transparent{
     margin-top: 50px;
@@ -100,6 +118,9 @@ body{
     /* border: 1px solid black; */
     border-radius: 10px;
     background: rgba(7, 7, 7, 0.7);
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
 .grid{
     display: grid;
@@ -126,7 +147,7 @@ body{
     width: 100%;
     height: 150px;
     /* border: 1px solid black; */
-    margin-top: 200px;
+    margin-top: 110px;
    /* border: none; */
     border-radius: 10px;
 }
@@ -135,20 +156,36 @@ body{
     grid-template-columns: auto auto auto auto auto auto;
     padding-top: 30px;
     grid-gap: 20px;
-    padding-left: 50px;
+    padding-left: 0px;
     /* height: 30px; */
 }
 
-.firsticon{
-    margin-top: 20px;
-    margin-left: 10px;
+.first:hover{
+    color: white;
+    background-color: skyblue;
+    transform: scale(1.1);
+    border-radius: 5px;
 }
-#firsticon{
-    color: skyblue;
-    font-size: 35px;
-    margin-top: -20px;
-    margin-left: 30px;
+.first:hover #firsticon{
+    color: white;
 }
+
+.first{
+    /* border: 1px solid red; */
+     height: 150px;
+     margin-top: -30px;
+ }
+ .firsticon{
+     margin-top: 20px;
+     margin-left: 10px;
+ }
+ 
+ #firsticon{
+     color: skyblue;
+     font-size: 35px;
+     margin-top: 0px;
+     margin-left: 30px;
+ }
 .secondicon{display: table; /* keep the background color wrapped tight */
     /*  margin: 0px auto 0px auto;  keep the table centered */
     border-radius: 20px;
@@ -161,6 +198,21 @@ body{
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
 }
+
+.secondicon1{display: table; /* keep the background color wrapped tight */
+    /*  margin: 0px auto 0px auto;  keep the table centered */
+    border-radius: 20px;
+    margin-top: 10px;
+    padding:5px 15px;
+    background-color:rgb(134, 133, 133, 0.3);
+    margin-left: 300px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
 .text3{
     margin: 50px 0px 20px 0px ;
     font-size: 30px;
@@ -188,10 +240,12 @@ body{
     box-shadow: 5px 0px 5px grey;
     /* box-shadow:  none|h-offset v-offset blur spread color |inset|initial|inherit; */
 }
+/*
 .card:hover{
     background-color: gray;
     transform: scale(1.1);   
 }
+*/
 .card1{
     position: relative;
     border: none;
@@ -201,7 +255,7 @@ body{
 }
 .card1:hover{
     background-color: gray;
-    transform: scale(1.1);   
+    transform: scale(1.01);   
 }
 #real{
     position: absolute;
@@ -257,6 +311,7 @@ body{
     /* background-color: skyblue; */
 }
 
+
 .card2{
     position: relative;
     border: none;
@@ -266,11 +321,11 @@ body{
 }
 .card2:hover{
     background-color: gray;
-    transform: scale(1.1);   
+    transform: scale(1.01);   
 }
 .popular{
     color: skyblue;
-    margin-top: 550px;
+    margin-top: 100px;
     padding-top: 50px;
     font-weight: bold;
     font-size: 30px;
@@ -426,6 +481,34 @@ body{
    /* height: 150px; */
     /* height: 30px; */
 }
+
+.subscribe{
+    height: 32px; 
+    border: none; 
+    width: 29%;
+}
+.subscribe:hover{
+    background-color: black;
+    color: white;
+}
+
+.transparent11{
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    margin-top: 0px;
+   /* border: none; */
+   padding-top: 100px;
+    border-radius: 10px;
+}
+.grid11{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 0px;
+    grid-gap: 40px;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 30px; */
+}
 .selling{
     font-size: 23px;
     margin-bottom: 0px;
@@ -456,24 +539,26 @@ body{
     margin-bottom: 100px;
 }
 
-.transparent9{
+.transparent13{
     margin-top: 10px;
     padding-top: 30px;
    /* border: none; */
     border-radius: 10px;
     padding-bottom: 30px;
 }
-.grid9{
+.grid13{
     display: grid;
     grid-template-columns: auto auto;
     padding-top: 0px;
     grid-gap: 30px;
-    width: 100%;
+    width: 100%; 
     border: none;
-    padding-bottom: 50px;
    /* height: 150px; */
     /* height: 30px; */
 }
+
+
+
 .grid9-1{
     float: left;
     width: 50%;
@@ -522,12 +607,22 @@ body{
     background-color:  rgb(56, 56, 56);
     float: left;
 }
-.transparent12{
-    padding-top: 100px;
+.transparent11{
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    margin-top: 0px;
+   /* border: none; */
+   padding-top: 100px;
+    border-radius: 10px;
 }
-.grid12{
+.grid11{
     display: grid;
-    grid-template-columns: 35% 20% 20% 25%;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 0px;
+    grid-gap: 40px;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 30px; */
 }
 .transparent12 #search{
     width: 100%;
@@ -583,7 +678,7 @@ ul li{
     margin-top: 70px;
     color:  rgb(160, 156, 156);
 }
-.copyright{
+#copyright{
     padding-top: 50px;
     padding-bottom: 80px;
     text-align: center;
